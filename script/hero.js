@@ -1,1 +1,1 @@
-const heroImage = $('.hero__img');
+// const heroImage = $('.hero__img');

@@ -6,3 +6,5 @@
 
 /* components */
 @import url(components.css);
+
+body { --slow-css-loaded:1px }
