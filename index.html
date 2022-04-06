@@ -10,17 +10,17 @@
     <title>Get Your &lt;head&gt; Straight</title>
 
     <script>
-      let style = document.createElement("style"),
-        css = "body{visibility:hidden}";
-      document.head.appendChild(style);
-      style.type = "text/css";
-      style.appendChild(document.createTextNode(css));
+      // let style = document.createElement("style"),
+      //   css = "body{visibility:hidden}";
+      // document.head.appendChild(style);
+      // style.type = "text/css";
+      // style.appendChild(document.createTextNode(css));
 
-      // anti flicker
-      window.addEventListener("load", () => {
-        style.innerHTML = "";
-        console.log("rxe");
-      });
+      // // anti flicker
+      // window.addEventListener("load", () => {
+      //   style.innerHTML = "";
+      //   console.log("rxe");
+      // });
     </script>
 
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
@@ -34,8 +34,8 @@
     <script defer src="script/gridbox.js"></script>
     <script defer src="script/app.js"></script>
 
-    <link rel="preload" href="image-tree.webp" as="image" fetchpriority="high" media="(max-width:471px)"/>
-    <link rel="preload" href="banner.webp" as="image" fetchpriority="high" media="(min-width:472px)"/>
+    <link rel="preload" href="image-tree.webp" as="image" fetchpriority="high" media="(max-width:471px)" imagesrcset="image-tree_480px.webp 480w, image-tree_800px.webp 800w, image-tree_1600px.webp 1600w" imagesizes="50vw" />
+    <link rel="preload" href="banner.webp" as="image" fetchpriority="high" media="(min-width:472px)" imagesrcset="banner_480px.webp 480w, banner_800px.webp 800w, banner_1600px.webp 1600w" imagesizes="50vw"/>
     <link rel="preconnect" href="https://youtube.com" />
     
   </head>
@@ -209,14 +209,14 @@
 
     <main>
       <section class="hero">
-        <img src="banner.webp" alt="" class="hero__img lcp" width="1920" height="722" />
+        <img src="banner.webp" srcset="banner_480px.webp 480w, banner_800px.webp 800w, banner_1600px.webp 1600w" sizes="50vw" alt="" class="hero__img lcp" width="1920" height="722" />
       </section>
       <!-- <script src="script/hero.js"></script> -->
 
       <section class="gridbox">
         <article class="gridbox__item">
           <section class="card">
-            <img src="image-tree.webp" alt="" class="card__img lcp" width="1920" height="1280" />
+            <img src="image-tree.webp" srcset="image-tree_480px.webp 480w, image-tree_800px.webp 800w, image-tree_1600px.webp 1600w" sizes="50vw" alt="" class="card__img lcp" width="1920" height="1280" />
             <hr />
           </section>
         </article>
