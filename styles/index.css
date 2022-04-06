@@ -6,10 +6,3 @@
 
 /* components */
 @import url(components.css);
-
-body { --slow-css-loaded:1px }
-
-img{
-    height: auto;
-    max-width: 100%;
-}

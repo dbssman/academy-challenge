@@ -1,0 +1,1 @@
+header{align-items:center;background:#000;color:#fff;display:flex;justify-content:space-between}header>*{margin:4px;padding:4px 8px}main>*{margin:24px 24px 0}main>:last-child{margin-bottom:24px}footer,main{margin-top:24px}iframe,img{width:100%}
