@@ -1,6 +1,6 @@
 body { --slow-css-loaded:1px }
 
-img{
+img, iframe{
     height: auto;
     max-width: 100%;
 }
