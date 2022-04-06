@@ -13,3 +13,5 @@ const lazyImageObserver = new IntersectionObserver((entries) => {
 images.forEach((entry) => {
   lazyImageObserver.observe(entry);
 });
+
+lazyImageObserver.observe(document.querySelector('iframe'))
