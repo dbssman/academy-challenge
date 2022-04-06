@@ -1,5 +1,3 @@
-const images = document.querySelectorAll("img:not(.lcp)");
-
 const lazyImageObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -10,8 +8,4 @@ const lazyImageObserver = new IntersectionObserver((entries) => {
   });
 });
 
-images.forEach((entry) => {
-  lazyImageObserver.observe(entry);
-});
-
-lazyImageObserver.observe(document.querySelector('iframe'))
+lazyImageObserver.observe(document.querySelector("iframe"));
